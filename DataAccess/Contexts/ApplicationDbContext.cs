@@ -13,7 +13,7 @@ namespace DataAccess.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Server=127.0.0.1;Port=5432;Database=Authentication;User Id=postgres;Password=Sd635241;");
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\ProjectsV13;Database=To-DoList;Trusted_Connection=true");
         }
 
         public DbSet<OperationClaim> OperationClaims { get; set; }

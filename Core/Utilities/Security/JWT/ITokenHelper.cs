@@ -10,8 +10,8 @@ namespace Core.Utilities.Security.JWT
 {
     public interface ITokenHelper
     {
-        IConfiguration Configuration { get; }
+            IConfiguration Configuration { get; }
 
-        AccessToken CreateToken(User user, List<OperationClaim> operationClaims);
+            AccessToken CreateToken(User user, List<OperationClaim> operationClaims);
     }
 }
